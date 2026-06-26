@@ -17,10 +17,10 @@ The demo includes its SQLite seed data at `src/data/crm.sqlite`. If you delete i
 From this folder:
 
 ```powershell
-python run_demo.py
+aethergraph serve --project-root . --load-module src.agent --reload
 ```
 
-The CLI will print the local AG UI URL. Open that URL in your browser.
+The CLI will keep the AetherGraph server and UI running, and it will print the local AG UI URL. Open that URL in your browser. Leave this command running while you test the agent; stop it with `Ctrl+C` when you are done.
 
 In the UI, use the left sidebar:
 
