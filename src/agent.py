@@ -18,7 +18,7 @@ def load_system_prompt() -> str:
 
 @graph_fn(
     name="crm_dashboard_agent",
-    inputs=["message", "chat_history", "session_id", "user_meta"],
+    inputs=["message", "attachments", "chat_history", "session_id", "user_meta"],
     outputs=["reply"],
     as_agent={
         "id": "crm_dashboard_agent",
@@ -33,6 +33,7 @@ def load_system_prompt() -> str:
 )
 async def crm_dashboard_agent(
     message: str,
+    attachments: list[dict[str, Any]] | None = None,
     chat_history: list[dict[str, Any]] | None = None,
     session_id: str | None = None,
     user_meta: dict[str, Any] | None = None,
