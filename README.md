@@ -65,6 +65,10 @@ In the UI:
 2. Select **CRM Dashboard**.
 3. Start chatting with the agent.
 
+You should see a chat-style agent workspace with the CRM Dashboard agent selected, user prompts on the right, and assistant responses that may include rich metric cards or Vega-Lite charts.
+
+![CRM Dashboard agent in AG UI](asset/ui.png)
+
 The default runtime workspace is `aethergraph_workspace/`. It is generated locally and ignored by Git.
 
 ## Prompts To Try
