@@ -58,7 +58,26 @@ Shape:
   }
 }
 
-If a visual is useful, card may be either:
-- a component block with component_type ag.ui.card.v1
-- a plot block with payload.engine vega-lite and payload.spec as a Vega-Lite spec
+If a visual is useful, card may be either a single AG UI block or a blocks wrapper.
+
+Vega-Lite plots must use this exact AG UI block shape:
+{
+  "kind": "plot",
+  "title": "Chart title",
+  "payload": {
+    "engine": "vega-lite",
+    "spec": {
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+      "data": {"values": [{"x": "A", "y": 1}]},
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "x", "type": "ordinal"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    }
+  }
+}
+
+Generic cards must use kind component with payload.component_type ag.ui.card.v1.
+Multiple blocks may use {"blocks": [block, block]}.
 """.strip()
