@@ -5,7 +5,7 @@ from typing import Any
 
 from aethergraph import NodeContext, graph_fn
 
-from crm_dashboard_demo.react.loop import run_react_loop
+from src.react.loop import run_react_loop
 
 PROMPT_DIR = Path(__file__).resolve().parent / "prompts"
 

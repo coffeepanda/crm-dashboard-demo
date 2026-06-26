@@ -1,5 +1,5 @@
-from crm_dashboard_demo.data.seed import seed_database
-from crm_dashboard_demo.db.repository import run_select_query
+from src.data.seed import seed_database
+from src.db.repository import run_select_query
 
 
 def test_seeded_database_supports_enriched_view(tmp_path):

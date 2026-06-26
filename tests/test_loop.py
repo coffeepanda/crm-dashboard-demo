@@ -1,6 +1,6 @@
 import asyncio
 
-from crm_dashboard_demo.react.loop import run_react_loop
+from src.react.loop import run_react_loop
 
 
 class FakeLLM:

@@ -1,4 +1,4 @@
-from crm_dashboard_demo.tools.handler import parse_tool_call
+from src.tools.handler import parse_tool_call
 
 
 def test_parse_tool_call_valid_query():

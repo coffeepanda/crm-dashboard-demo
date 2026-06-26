@@ -4,9 +4,9 @@ import json
 import sqlite3
 from typing import Any
 
-from crm_dashboard_demo.db.repository import run_select_query
-from crm_dashboard_demo.react.types import ToolCall, ToolResult
-from crm_dashboard_demo.ui.rich import send_finish
+from src.db.repository import run_select_query
+from src.react.types import ToolCall, ToolResult
+from src.ui.rich import send_finish
 
 from .validation import validate_select_sql
 

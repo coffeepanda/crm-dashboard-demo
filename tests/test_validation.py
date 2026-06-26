@@ -1,4 +1,4 @@
-from crm_dashboard_demo.tools.validation import validate_select_sql
+from src.tools.validation import validate_select_sql
 
 
 def test_validate_select_sql_adds_limit():

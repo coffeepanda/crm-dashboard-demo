@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from crm_dashboard_demo.tools.handler import handle_finish, handle_query, parse_tool_call
-from crm_dashboard_demo.tools.schemas import SCHEMA_SUMMARY, TOOL_SCHEMA_SUMMARY
+from src.tools.handler import handle_finish, handle_query, parse_tool_call
+from src.tools.schemas import SCHEMA_SUMMARY, TOOL_SCHEMA_SUMMARY
 
 from .context import compose_react_messages
 from .policy import LoopPolicy, MAX_CYCLE_MESSAGE

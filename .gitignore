@@ -1,4 +1,4 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-crm_dashboard_demo/data/crm.sqlite
+aethergraph_workspace/

@@ -3,7 +3,7 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
-from crm_dashboard_demo.data.seed import seed_database
+from src.data.seed import seed_database
 
 DEFAULT_DB_PATH = Path(__file__).resolve().parents[1] / "data" / "crm.sqlite"
 

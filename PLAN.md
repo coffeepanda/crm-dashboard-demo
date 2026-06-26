@@ -23,7 +23,7 @@ The demo should feel like a lightweight sales metrics dashboard in chat: the use
 ```text
 others/crm-dashboard-demo/
   PLAN.md
-  crm_dashboard_demo/
+  src/
     __init__.py
     agent.py
     prompts/

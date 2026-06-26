@@ -1,5 +1,5 @@
-from crm_dashboard_demo.react.policy import LoopPolicy, REPEATED_CALL_MESSAGE
-from crm_dashboard_demo.react.types import ToolCall
+from src.react.policy import LoopPolicy, REPEATED_CALL_MESSAGE
+from src.react.types import ToolCall
 
 
 def test_repeated_call_policy_normalizes_sql_whitespace_and_case():
